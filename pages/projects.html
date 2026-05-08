@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/portfolio/">
+  <title>syedazeez337 / projects.sh</title>
+  <meta name="description" content="Projects by Azeez Syed — systems tools, cloud-native infrastructure, compilers, and eBPF.">
+  <meta property="og:title" content="Projects — Azeez Syed">
+  <meta property="og:description" content="Systems tools, cloud-native infrastructure, compilers, and eBPF.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://syedazeez337.github.io/portfolio/pages/projects.html">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="assets/js/loadComponents.js"></script>
+</head>
+<body data-page="projects">
+  <div id="header-placeholder"></div>
+  <div class="t-page">
+    <div class="t-frame">
+      <div id="topnav-placeholder"></div>
+
+      <!-- eBPF & Systems -->
+      <div class="t-divider">
+        <div class="t-divider-label">— <span>ebpf &amp; systems</span></div>
+      </div>
+      <div class="t-projects-grid">
+        <div class="t-project-card">
+          <div class="t-project-title">procscope</div>
+          <div class="t-project-desc">Real-time Linux process lifecycle visualizer using eBPF. Traces exec, fork, and exit events with sub-millisecond latency — no sampling, full fidelity.</div>
+          <div class="t-project-stack"><span>C</span><span>eBPF</span><span>Linux</span></div>
+          <div class="t-project-links">
+            <a href="https://github.com/syedazeez337/procscope" target="_blank" rel="noopener">code →</a>
+          </div>
+        </div>
+        <div class="t-project-card">
+          <div class="t-project-title">rusturnal</div>
+          <div class="t-project-desc">TUI visualizer built on Rust and eBPF for observing Linux kernel internals in real-time from the terminal.</div>
+          <div class="t-project-stack"><span>Rust</span><span>eBPF</span><span>TUI</span></div>
+          <div class="t-project-links">
+            <a href="https://github.com/syedazeez337/rusturnal" target="_blank" rel="noopener">code →</a>
+          </div>
+        </div>
+        <div class="t-project-card">
+          <div class="t-project-title">ebpf-hello</div>
+          <div class="t-project-desc">Minimal eBPF program that attaches to the kernel and emits a trace event — a clean starting point for eBPF development.</div>
+          <div class="t-project-stack"><span>C</span><span>eBPF</span></div>
+          <div class="t-project-links">
+            <a href="https://github.com/syedazeez337/ebpf-hello" target="_blank" rel="noopener">code →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud-native & Kubernetes -->
+      <div class="t-divider">
+        <div class="t-divider-label">— <span>cloud-native</span></div>
+      </div>
+      <div class="t-projects-grid">
+        <div class="t-project-card">
+          <div class="t-project-title">kuberift</div>
+          <div class="t-project-desc">Fuzzy-first interactive Kubernetes resource navigator built on skim. Browse, inspect, and act on cluster resources entirely from the terminal.</div>
+          <div class="t-project-stack"><span>Rust</span><span>Kubernetes</span><span>TUI</span></div>
+          <div class="t-project-links">
+            <a href="https://github.com/syedazeez337/kuberift" target="_blank" rel="noopener">code →</a>
+          </div>
+        </div>
+        <div class="t-project-card">
+          <div class="t-project-title">cilium-gateway-api</div>
+          <div class="t-project-desc">Hands-on demo of Cilium as a Kubernetes Gateway API implementation — routing, traffic policies, and HTTPS with a single CNI.</div>
+          <div class="t-project-stack"><span>Cilium</span><span>Kubernetes</span><span>Gateway API</span></div>
+          <div class="t-project-links">
+            <a href="https://github.com/syedazeez337/cilium-gateway-api" target="_blank" rel="noopener">code →</a>
+          </div>
+        </div>
+        <div class="t-project-card">
+          <div class="t-project-title">oss-contrib-setup</div>
+          <div class="t-project-desc">AI-assisted development environment for CNCF Go contribution — skills, agents, ACE playbooks, and automated scaffolding for first-time contributors.</div>
+          <div class="t-project-stack"><span>Go</span><span>Shell</span><span>CNCF</span><span>AI</span></div>
+          <div class="t-project-links">
+            <a href="https://github.com/syedazeez337/oss-contrib-setup" target="_blank" rel="noopener">code →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI & Tooling -->
+      <div class="t-divider">
+        <div class="t-divider-label">— <span>ai &amp; tooling</span></div>
+      </div>
+      <div class="t-projects-grid">
+        <div class="t-project-card">
+          <div class="t-project-title">purple-ai-sandbox</div>
+          <div class="t-project-desc">Secure, isolated execution environment for AI agents. Comprehensive sandboxing prevents unintended side-effects from LLM-generated code at runtime.</div>
+          <div class="t-project-stack"><span>Rust</span><span>Security</span><span>AI Agents</span></div>
+          <div class="t-project-links">
+            <a href="https://github.com/syedazeez337/purple-ai-sandbox" target="_blank" rel="noopener">code →</a>
+          </div>
+        </div>
+        <div class="t-project-card">
+          <div class="t-project-title">memelixir</div>
+          <div class="t-project-desc">AI-powered local meme generator that downloads templates, generates captions via Ollama, and renders them — entirely in your terminal.</div>
+          <div class="t-project-stack"><span>Python</span><span>Ollama</span><span>LLM</span></div>
+          <div class="t-project-links">
+            <a href="https://github.com/syedazeez337/memelixir" target="_blank" rel="noopener">code →</a>
+          </div>
+        </div>
+        <div class="t-project-card">
+          <div class="t-project-title">bte</div>
+          <div class="t-project-desc">Deterministic behavioral testing engine for CLI and TUI applications — reproducible test scenarios without flakiness from timing or state.</div>
+          <div class="t-project-stack"><span>Rust</span><span>Testing</span><span>CLI</span></div>
+          <div class="t-project-links">
+            <a href="https://github.com/syedazeez337/bte" target="_blank" rel="noopener">code →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compilers & Language -->
+      <div class="t-divider">
+        <div class="t-divider-label">— <span>compilers &amp; languages</span></div>
+      </div>
+      <div class="t-projects-grid">
+        <div class="t-project-card">
+          <div class="t-project-title">lofty</div>
+          <div class="t-project-desc">A compiler series — building a full compiler incrementally from lexer to codegen, exploring each stage as a standalone learning artifact.</div>
+          <div class="t-project-stack"><span>Go</span><span>Compilers</span></div>
+          <div class="t-project-links">
+            <a href="https://github.com/syedazeez337/lofty" target="_blank" rel="noopener">code →</a>
+          </div>
+        </div>
+        <div class="t-project-card">
+          <div class="t-project-title">Monkey Interpreter</div>
+          <div class="t-project-desc">Full implementation of the Monkey programming language — lexer, parser, AST, evaluator, and REPL following Thorsten Ball's book.</div>
+          <div class="t-project-stack"><span>Go</span><span>Interpreter</span></div>
+          <div class="t-project-links">
+            <a href="https://github.com/syedazeez337/Monkey-Interpreter" target="_blank" rel="noopener">code →</a>
+          </div>
+        </div>
+        <div class="t-project-card">
+          <div class="t-project-title">compilerML</div>
+          <div class="t-project-desc">A compiler written in OCaml — exploring functional approaches to parsing, type inference, and code generation.</div>
+          <div class="t-project-stack"><span>OCaml</span><span>Compilers</span><span>FP</span></div>
+          <div class="t-project-links">
+            <a href="https://github.com/syedazeez337/compilerML" target="_blank" rel="noopener">code →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Go Systems -->
+      <div class="t-divider">
+        <div class="t-divider-label">— <span>go systems</span></div>
+      </div>
+      <div class="t-projects-grid">
+        <div class="t-project-card">
+          <div class="t-project-title">GoShell</div>
+          <div class="t-project-desc">A Unix shell written in Go — implements command parsing, piping, redirection, and built-ins from scratch.</div>
+          <div class="t-project-stack"><span>Go</span><span>Systems</span></div>
+          <div class="t-project-links">
+            <a href="https://github.com/syedazeez337/GoShell" target="_blank" rel="noopener">code →</a>
+          </div>
+        </div>
+        <div class="t-project-card">
+          <div class="t-project-title">databasego</div>
+          <div class="t-project-desc">A database engine written in Go — storage engine, query parsing, and basic SQL-like interface built from first principles.</div>
+          <div class="t-project-stack"><span>Go</span><span>Database</span></div>
+          <div class="t-project-links">
+            <a href="https://github.com/syedazeez337/databasego" target="_blank" rel="noopener">code →</a>
+          </div>
+        </div>
+        <div class="t-project-card">
+          <div class="t-project-title">gomonitor</div>
+          <div class="t-project-desc">Real-time system monitor in Go — tracks CPU, memory, and process metrics with a live-updating terminal UI.</div>
+          <div class="t-project-stack"><span>Go</span><span>TUI</span><span>Systems</span></div>
+          <div class="t-project-links">
+            <a href="https://github.com/syedazeez337/gomonitor" target="_blank" rel="noopener">code →</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.t-frame -->
+  </div><!-- /.t-page -->
+  <div id="footer-placeholder"></div>
+</body>
+</html>
