@@ -9,11 +9,23 @@
   <meta property="og:title" content="Misc — Azeez Syed">
   <meta property="og:description" content="Interests, reading, and things worth sharing.">
   <meta property="og:type" content="website">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0a0d12">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f4ef">
   <link rel="canonical" href="https://syedazeez337.github.io/portfolio/pages/misc.html">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) { document.documentElement.setAttribute('data-theme', 'dark'); }
+    })();
+  </script>
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script defer src="assets/js/loadComponents.js"></script>
+  <script defer src="assets/js/main.js"></script>
 </head>
 <body data-page="misc">
   <div id="header-placeholder"></div>
